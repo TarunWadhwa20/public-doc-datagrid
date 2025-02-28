@@ -13,11 +13,11 @@ This project is a simple datagrid built with React and TypeScript in a Next.js a
 ## Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/datagrid-app.git
+   git clone https://github.com/TarunWadhwa20/public-doc-datagrid
    ```
 2. Navigate to the project directory:
    ```sh
-   cd datagrid-app
+   cd public-doc-datagrid
    ```
 3. Install dependencies:
    ```sh
@@ -65,7 +65,7 @@ This project is a simple datagrid built with React and TypeScript in a Next.js a
 ## Deployment
 This project is deployed on Vercel. You can access it here:
 
-[Live Demo](https://your-vercel-deployment-link.vercel.app)
+[Live Demo](https://public-doc-datagrid.vercel.app/)
 
 ## License
 This project is licensed under the MIT License.
