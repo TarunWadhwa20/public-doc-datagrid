@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Public Doc
 
-## Getting Started
+## Overview
+This project is a simple datagrid built with React and TypeScript in a Next.js application. It displays a list of processes along with their devices, file paths, and statuses. Users can select individual rows or use the "Select All" checkbox, which supports an intermediate state. A "Download" button is enabled only when valid selections are made.
 
-First, run the development server:
+## Features
+- Displays a table with process details
+- Checkboxes for individual row selection
+- "Select All" functionality with intermediate state
+- "Download" button that enables based on selection rules
+- Green dot indicator for "available" status rows
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/datagrid-app.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd datagrid-app
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+
+## Usage
+- Select individual rows using checkboxes.
+- The "Select All" checkbox updates based on row selections.
+- If at least one row with `status = available` is selected, the "Download" button is enabled.
+- If a row with `status = scheduled` is selected, the "Download" button is disabled.
+- Clicking "Download" triggers an alert with selected item details.
+
+## File Structure
+```
+/src
+  ├── app
+  │   ├── components
+  │   │   ├── DataGrid.tsx   # Main datagrid component
+  │   │   ├── DataGridHeader.tsx   # Datagrid header component
+  │   │   ├── DataGridRow.tsx   # Datagrid Row component
+  │   ├── page.tsx           # Main entry point
+  │   ├── styles
+  │   │   ├── globals.css    # Global styles
+  ├── public
+  ├── package.json
+  ├── tsconfig.json
+  ├── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+- Next.js (React Framework)
+- TypeScript
+- CSS (No external libraries)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Future Enhancements
+- Add sorting and filtering functionalities
+- Implement API integration for dynamic data
+- Improve accessibility features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
+This project is deployed on Vercel. You can access it here:
 
-## Learn More
+[Live Demo](https://your-vercel-deployment-link.vercel.app)
 
-To learn more about Next.js, take a look at the following resources:
+## License
+This project is licensed under the MIT License.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

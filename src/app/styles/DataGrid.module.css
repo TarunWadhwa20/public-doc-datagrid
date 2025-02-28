@@ -1,0 +1,53 @@
+.datagridContainer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .selectedActions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .selectedCount {
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .downloadButton {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.2;
+  }
+  
+  .downloadButton.enabled {
+    opacity: 1;
+  }
+  
+  .datagrid {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .datagrid th, .datagrid td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .datagrid th {
+    background-color: #f4f4f4;
+  }
+  
+  .statusDot {
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
